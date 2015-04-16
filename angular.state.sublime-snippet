@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+\$stateProvider.state({
+    name: '${1:name}',
+    url: '/${1:name}',
+    controller: '${2:controller}',
+    controllerAs: '${3:controllerAs}',
+    templateUrl: '${4:templateUrl}'
+});
+]]></content>
+    <tabTrigger>ngstate</tabTrigger>
+    <scope>source.js</scope>
+</snippet>
