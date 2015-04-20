@@ -10,10 +10,14 @@
 
     function ${2:Ctrl}(${3:dependencies}) {
         /*jshint validthis: true */
-        var vm = this;
-        vm.title = '${2:Ctrl}';
+
+        var vm = {
+            activate: activate
+        };
 
         activate();
+
+        angular.extend(this, vm);
 
         //////////////////////
 
