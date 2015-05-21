@@ -14,9 +14,11 @@
             restrict: 'E',
             replace: true,
             transclude: true,
-            bindToController: true,
-            controllerAs: '${2:directive}',
-            controller: '${2:directive}Ctrl',
+            templateUrl: 'module/view/${4:view}.html',
+            //bindToController: true,
+            //controllerAs: '${2:directive}',
+            //controller: '${5:${2}}Ctrl',
+            require: ['${2:directive}'],
             link: postLink
         };
 
@@ -24,7 +26,8 @@
 
         //////////////////////
 
-        function postLink(scope, element, attrs) {
+        function postLink(scope, element, attrs, ctrls) {
+            \$${5:${2}} = ctrls[0];
         }
     }
 })();
