@@ -15,10 +15,10 @@
             replace: true,
             transclude: true,
             templateUrl: 'module/view/${4:view}.html',
-            //bindToController: true,
-            //controllerAs: '${5:${2}}Ctrl',
-            //controller: '${2:directive}',
-            //require: ['${2:directive}'],
+            ${5://}bindToController: true,
+            ${5://}controllerAs: '${6:${2}}',
+            ${5://}controller: '${7:${2}Ctrl}',
+            ${5://}require: ['${2:directive}'],
             link: postLink
         };
 
@@ -26,13 +26,13 @@
 
         //////////////////////
 
-        //controller.$inject = [];
+        ${5://}controller.\$inject = [];
 
-        //function controller() {
-        //}
+        ${5://}function controller() {
+        ${5://}}
 
         function postLink(scope, element, attrs, ctrls) {
-            //${5:${2}} = ctrls[0];
+            ${5://}${6:${2}} = ctrls[0];
         }
     }
 })();
