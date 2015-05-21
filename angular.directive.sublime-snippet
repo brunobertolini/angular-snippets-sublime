@@ -16,9 +16,9 @@
             transclude: true,
             templateUrl: 'module/view/${4:view}.html',
             //bindToController: true,
-            //controllerAs: '${2:directive}',
-            //controller: '${5:${2}}Ctrl',
-            require: ['${2:directive}'],
+            //controllerAs: '${5:${2}}Ctrl',
+            //controller: '${2:directive}',
+            //require: ['${2:directive}'],
             link: postLink
         };
 
@@ -26,8 +26,13 @@
 
         //////////////////////
 
+        //controller.$inject = [];
+
+        //function controller() {
+        //}
+
         function postLink(scope, element, attrs, ctrls) {
-            ${5:${2}} = ctrls[0];
+            //${5:${2}} = ctrls[0];
         }
     }
 })();
