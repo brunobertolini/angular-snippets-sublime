@@ -27,7 +27,7 @@
         //////////////////////
 
         function postLink(scope, element, attrs, ctrls) {
-            \$${5:${2}} = ctrls[0];
+            ${5:${2}} = ctrls[0];
         }
     }
 })();
