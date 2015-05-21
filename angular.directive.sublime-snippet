@@ -14,7 +14,7 @@
             restrict: 'E',
             replace: true,
             transclude: true,
-            templateUrl: 'module/view/${4:view}.html',
+            templateUrl: '${4:module/view/view}.html',
             ${5://}bindToController: true,
             ${5://}controllerAs: '${6:${2}}',
             ${5://}controller: '${7:${2}Ctrl}',
@@ -32,7 +32,7 @@
         ${5://}}
 
         function postLink(scope, element, attrs, ctrls) {
-            ${5://}${6:${2}} = ctrls[0];
+            ${5://}var ${6:${2}} = ctrls[0];
         }
     }
 })();
