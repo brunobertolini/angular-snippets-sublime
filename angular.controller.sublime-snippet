@@ -9,19 +9,23 @@
     ${2:Ctrl}.\$inject = [${3:dependencies}];
 
     function ${2:Ctrl}(${3:dependencies}) {
-        /*jshint validthis: true */
 
-        var vm = {
-            activate: activate
+        var ctrl = {
+            ${4:func}: ${4:func}
         };
 
         activate();
 
-        angular.extend(this, vm);
+        angular.extend(this, ctrl);
 
         //////////////////////
 
         function activate() {
+        }
+
+        /*------------------*/
+
+        function ${4:func}() {
         }
     }
 })();
